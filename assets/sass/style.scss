@@ -7,10 +7,12 @@
 @import "base/grid";
 @import "base/tipografia";
 @import "base/resets";
+@import "base/bootstrap-grid";
 
 // Componentes
 @import "componentes/formulario";
 @import "componentes/botoes";
+@import "componentes/utils";
 
 // Layout
 @import "layout/home";

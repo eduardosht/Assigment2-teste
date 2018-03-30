@@ -1,0 +1,38 @@
+input {
+	outline: none !important;
+}
+.input-box {
+    margin-bottom: 20px;
+
+    label {
+	    display: block;
+	    font-size: 28px;
+	    color: #f37a29;
+	    margin-bottom: 10px;
+
+	    &.error {
+			font-size: 16px;
+			margin-top: 10px;
+			color: #000;
+			letter-spacing: 2px;
+			margin-left: 10px;
+	    }
+    }
+
+	input[type="text"] {
+	    display: block;
+	    width: 100%;
+	    border: 2px solid #f37a29;
+	    padding: 20px;
+	    font-size: 18px;
+	    color: #f37a29;
+	}
+}
+
+.second-step-designer {
+	display: none;
+}
+.second-step-recrutador {
+	display: none;
+}
+

@@ -16,6 +16,8 @@ gulp.task( 'sass', function() {
 
 //JavaScript
 var jsFiles = [
+	'assets/js/jquery.validate.min.js',
+	'assets/js/additional-methods.min.js',
 	'assets/js/script.js'
 ];
 gulp.task( 'javascript', function() {

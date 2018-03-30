@@ -85,13 +85,13 @@
 									<div class="row">
 										<div class="col-6">
 											<p class="input-box">
-												<label for="">Nome</label>
+												<label for="nome">Nome</label>
 												<input type="text" name="nome">
 											</p>
 										</div>
 										<div class="col-6">
 											<p class="input-box">
-												<label for="">E-mail</label>
+												<label for="email">E-mail</label>
 												<input type="text" name="email">
 											</p>
 										</div>
@@ -101,10 +101,10 @@
 									<div class="row">
 										<div class="col-12">
 											<p class="input-box radio-input">
-												<label for="">Eu sou</label>
+												<label for="tipo">Eu sou</label>
 												<label for="tipo" class="error" style="display:none;"></label>
-												<input type="radio" name="tipo" value="designer"> Designer<br>
-												<input type="radio" name="tipo" value="recrutador"> Recrutador
+												<input type="radio" name="tipo" value="B2C"> Designer<br>
+												<input type="radio" name="tipo" value="B2B"> Recrutador
 											</p>
 										</div>
 									</div>
@@ -113,7 +113,7 @@
 									<div class="row">
 										<div class="col-12">
 											<p class="input-box radio-input">
-												<label for="">Quantos anos de experiência você possui na sua profissão?</label>
+												<label for="experiencia">Quantos anos de experiência você possui na sua profissão?</label>
 												<label for="experiencia" class="error" style="display:none;"></label>
 												<input type="radio" name="experiencia" value="Menos de 2 anos"> Menos de 2 anos<br>
 												<input type="radio" name="experiencia" value="Menos de 5 anos"> Menos de 5 anos<br>
@@ -125,7 +125,7 @@
 									<div class="row">
 										<div class="col-12">
 											<p class="input-box radio-input">
-												<label for="">Você trabalha/quer trabalhar no mercado digital?</label>
+												<label for="desejo_mdigital">Você trabalha/quer trabalhar no mercado digital?</label>
 												<label for="desejo_mdigital" class="error" style="display:none;"></label>
 												<input type="radio" name="desejo_mdigital" value="Sim"> Sim<br>
 												<input type="radio" name="desejo_mdigital" value="Não"> Não
@@ -139,35 +139,207 @@
 
 								
 								<!-- DESIGNER - STEP 2 -->
-								<div class="second-step-designer">
+								<div class="second-step-B2C">
 									<div class="row">
-										<div class="col-12">
-											<p class="input-box">
-												<label for="">Designer Nome</label>
-												<input type="text" name="teste">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_1">Em um processo seletivo, o que você sente que valorizam mais em você?</label>
+												<label for="b2c_quest_1" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_1" value="Minhas competências técnicas"> Minhas competências técnicas<br>
+												<input type="radio" name="b2c_quest_1" value="Meu perfil pessoal e fit cultural com a empresa"> Meu perfil pessoal e fit cultural com a empresa<br>
+												<input type="radio" name="b2c_quest_1" value="Minha experiência profissional e formação"> Minha experiência profissional e formação<br>
+												<span class="outros-input">
+													<input type="radio" name="b2c_quest_1" value="Outro"> Outro
+													<input type="text" name="b2c_quest_1_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_2">Você acha que as provas de habilidades específicas medem bem as habilidades necessárias?</label>
+												<label for="b2c_quest_2" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_2" value="Sim, todas"> Sim, todas<br>
+												<input type="radio" name="b2c_quest_2" value="Apenas algumas"> Apenas algumas<br>
+												<input type="radio" name="b2c_quest_2" value="Não, nenhuma"> Não, nenhuma
 											</p>
 										</div>
 									</div>
+
+									<div class="row">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_3">O que mais te frustra durante a realização destas provas técnicas em processos seletivos?</label>
+												<label for="b2c_quest_3" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_3" value="Os requisitos são muito avançados para o cargo"> Os requisitos são muito avançados para o cargo<br>
+												<input type="radio" name="b2c_quest_3" value="Os testes são confusos, com objetivos mal explicados"> Os testes são confusos, com objetivos mal explicados<br>
+												<input type="radio" name="b2c_quest_3" value="Falta feedback para entender como posso melhorar"> Falta feedback para entender como posso melhorar<br>
+												<span class="outros-input">
+													<input type="radio" name="b2c_quest_3" value="Outro"> Outro
+													<input type="text" name="b2c_quest_3_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_4">Você já foi contratado pelas suas habilidades, mas raramente as utilizou?</label>
+												<label for="b2c_quest_4" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_4" value="Sim"> Sim<br>
+												<input type="radio" name="b2c_quest_4" value="Não"> Não
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_5">Se sim, como você se sentiu?</label>
+												<label for="b2c_quest_5" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_5" value="Desvalorizado. Saí do cargo pouco tempo depois"> Desvalorizado. Saí do cargo pouco tempo depois<br>
+												<input type="radio" name="b2c_quest_5" value="Desvalorizado. Mas continuei no cargo"> Desvalorizado. Mas continuei no cargo<br>
+												<input type="radio" name="b2c_quest_5" value="Indiferente. Continuei na função"> Indiferente. Continuei na função<br>
+												<span class="outros-input">
+													<input type="radio" name="b2c_quest_5" value="Outro"> Outro
+													<input type="text" name="b2c_quest_5_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_6">O que é essencial para um bom processo seletivo de UX design?</label>
+												<label for="b2c_quest_6" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_6" value="Descrição das ferramentas e níveis de proficiência exigidos"> Descrição das ferramentas e níveis de proficiência exigidos<br>
+												<input type="radio" name="b2c_quest_6" value="Especificar as metodologias usadas (agile, scrum, etc)"> Especificar as metodologias usadas (agile, scrum, etc)<br>
+												<input type="radio" name="b2c_quest_6" value="Processo de seleção liderado por um gestor de design"> Processo de seleção liderado por um gestor de design<br>
+												<span class="outros-input">
+													<input type="radio" name="b2c_quest_6" value="Outro"> Outro
+													<input type="text" name="b2c_quest_6_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2c_quest_7">O que enfraquece um processo de seleção para UX Design?</label>
+												<label for="b2c_quest_7" class="error" style="display:none;"></label>
+												<input type="radio" name="b2c_quest_7" value="Recrutador demonstra falta de conhecimento na área"> Recrutador demonstra falta de conhecimento na área<br>
+												<input type="radio" name="b2c_quest_7" value="Os pré-requisitos não são compatíveis com o salário"> Os pré-requisitos não são compatíveis com o salário<br>
+												<input type="radio" name="b2c_quest_7" value="Os pré-requisitos dizem respeito a outras áreas "> Os pré-requisitos dizem respeito a outras áreas <br>
+												<span class="outros-input">
+													<input type="radio" name="b2c_quest_7" value="Outro"> Outro
+													<input type="text" name="b2c_quest_7_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+									</div>
+
+
 									<div class="row">
 										<div class="col-12">
-											<button id="next-step" class="btn btn-full btn--roxo">Finalizar</button>
+											<button class="finalizar-form btn btn-full btn--roxo">Finalizar</button>
 										</div>
 									</div>
 								</div>
 
 								<!-- RECRUTADOR - STEP 2 -->
-								<div class="second-step-recrutador">
+								<div class="second-step-B2B">
 									<div class="row">
-										<div class="col-12">
-											<p class="input-box">
-												<label for="">Recrutador Nome</label>
-												<input type="text" name="teste2">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2b_quest_1">Durante um processo seletivo, o que a sua empresa mais valoriza no candidato?</label>
+												<label for="b2b_quest_1" class="error" style="display:none;"></label>
+												<input type="radio" name="b2b_quest_1" value="Competências técnicas"> Competências técnicas<br>
+												<input type="radio" name="b2b_quest_1" value="Perfil pessoal e fit cultural com a empresa"> Perfil pessoal e fit cultural com a empresa<br>
+												<input type="radio" name="b2b_quest_1" value="Experiência profissional e formação"> Experiência profissional e formação<br>
+												<span class="outros-input">
+													<input type="radio" name="b2b_quest_1" value="Outro"> Outro
+													<input type="text" name="b2b_quest_1_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2b_quest_2">Em quais critérios sua empresa se baseia para definir um teste técnico: </label>
+												<label for="b2b_quest_2" class="error" style="display:none;"></label>
+												<input type="radio" name="b2b_quest_2" value="Constatação de habilidades anunciadas no currículo"> Constatação de habilidades anunciadas no currículo<br>
+												<input type="radio" name="b2b_quest_2" value="Necessidade específica da empresa no momento da contratação"> Necessidade específica da empresa no momento da contratação<br>
+												<input type="radio" name="b2b_quest_2" value="Tempo que a empresa tem disponível para o processo seletivo"> Tempo que a empresa tem disponível para o processo seletivo<br>
+												<span class="outros-input">
+													<input type="radio" name="b2b_quest_2" value="Outro"> Outro
+													<input type="text" name="b2b_quest_2_outro" style="display: none;" class="outro-input">
+												</span>
 											</p>
 										</div>
 									</div>
+
+									<div class="row">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2b_quest_3">Os critérios da empresa são validados através dos testes atuais?</label>
+												<label for="b2b_quest_3" class="error" style="display:none;"></label>
+												<input type="radio" name="b2b_quest_3" value="Sim, nossos critérios funcionam"> Sim, nossos critérios funcionam<br>
+												<input type="radio" name="b2b_quest_3" value="Em parte, deveríamos pensar em técnicas mais eficientes"> Em parte, deveríamos pensar em técnicas mais eficientes<br>
+												<input type="radio" name="b2b_quest_3" value="Não, mas não sabemos quais testes utilizar para uma contratação mais eficiente"> Não, mas não sabemos quais testes utilizar para uma contratação mais eficiente.
+											</p>
+										</div>
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2b_quest_4">A sua empresa já fez uma contratação equivocada devido a dificuldades na hora do recrutamento?</label>
+												<label for="b2b_quest_4" class="error" style="display:none;"></label>
+												<input type="radio" name="b2b_quest_4" value="Sim"> Sim<br>
+												<input type="radio" name="b2b_quest_4" value="Não"> Não<br>
+												<input type="radio" name="b2b_quest_4" value="Nunca contratei um profissional de UX Design"> Nunca contratei um profissional de UX Design.
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-6">
+											<p class="input-box checked-input checkeboxes-quest5">
+												<label for="b2b_quest_5">Caso tenha respondido “sim”, qual foi o equívoco?</label>
+												<label for="b2b_quest_5" class="error" style="display:none;"></label>
+												<input type="checkbox" name="b2b_quest_5" value="O profissional contratado não possuía as competências técnicas necessárias para a vaga"> O profissional contratado não possuía as competências técnicas necessárias para a vaga<br>
+												<input type="checkbox" name="b2b_quest_5" value="O profissional contratado não possuía um bom relacionamento com a equipe ou não compartilhava dos mesmos valores que a empresa"> O profissional contratado não possuía um bom relacionamento com a equipe ou não compartilhava dos mesmos valores que a empresa<br>
+												<span class="outros-input">
+													<input type="checkbox" name="b2b_quest_5" value="Outro"> Outro
+													<input type="text" name="b2b_quest_5_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2b_quest_6">O que vocês fazem quando identificam que um profissional contratado não se encaixa às competências necessárias?</label>
+												<label for="b2b_quest_6" class="error" style="display:none;"></label>
+												<input type="radio" name="b2b_quest_6" value="A pessoa é desligada da empresa"> A pessoa é desligada da empresa<br>
+												<input type="radio" name="b2b_quest_6" value="É feito o rebaixamento de cargo"> É feito o rebaixamento de cargo<br>
+												<input type="radio" name="b2b_quest_6" value="Investimos no treinamento do profissional"> Investimos no treinamento do profissional<br>
+												<span class="outros-input">
+													<input type="radio" name="b2b_quest_6" value="Outro"> Outro
+													<input type="text" name="b2b_quest_6_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-6">
+											<p class="input-box radio-input">
+												<label for="b2b_quest_7">Você tem interesse em contratar uma empresa para terceirizar o recrutamento de designers?</label>
+												<label for="b2b_quest_7" class="error" style="display:none;"></label>
+												<input type="radio" name="b2b_quest_7" value="Sim"> Sim<br>
+												<input type="radio" name="b2b_quest_7" value="Não"> Não<br>
+												<span class="outros-input">
+													<input type="radio" name="b2b_quest_7" value="Já o faço"> Já o faço. Qual empresa?
+													<input type="text" name="b2b_quest_7_outro" style="display: none;" class="outro-input">
+												</span>
+											</p>
+										</div>
+									</div>
+
 									<div class="row">
 										<div class="col-12">
-											<button id="next-step" class="btn btn-full btn--roxo">Finalizar</button>
+											<button class="finalizar-form btn btn-full btn--roxo">Finalizar</button>
 										</div>
 									</div>
 								</div>

@@ -1671,7 +1671,22 @@ input {
       margin-top: 10px;
       color: #000;
       letter-spacing: 2px;
-      margin-left: 10px; }
+      position: relative; }
+      .input-box label.error::before {
+        content: '';
+        display: inline-block;
+        background-color: #da1313;
+        width: 12px;
+        vertical-align: top;
+        height: 12px;
+        border-radius: 30px;
+        margin-top: 2px;
+        margin-right: 10px; }
+  .input-box .outros-input input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px; }
   .input-box input[type="text"] {
     display: block;
     width: 100%;
@@ -1680,11 +1695,18 @@ input {
     font-size: 18px;
     color: #f37a29; }
 
-.second-step-designer {
+.second-step-B2C {
   display: none; }
 
-.second-step-recrutador {
+.second-step-B2B {
   display: none; }
+
+.outros-input label.error {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #000;
+  letter-spacing: 2px;
+  margin-left: 0; }
 
 .btn {
   background-color: #a2a2a2;

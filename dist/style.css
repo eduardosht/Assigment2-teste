@@ -1827,4 +1827,34 @@ footer {
     font-size: 26px;
     color: #FFF; }
 
+header.obrigado-header {
+  height: 100px;
+  overflow: hidden; }
+
+.container-obrigado {
+  height: calc(100vh - 180px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+  .container-obrigado h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .container-obrigado h2 {
+    font-size: 40px;
+    margin-bottom: 50px; }
+  .container-obrigado p {
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .container-obrigado ul {
+    display: flex;
+    justify-content: center; }
+  .container-obrigado img {
+    width: 90px; }
+
+footer.obrigado-footer {
+  background-color: #c1b2d0;
+  height: 80px;
+  position: relative; }
+
 /*# sourceMappingURL=assets/maps/style.css.map */

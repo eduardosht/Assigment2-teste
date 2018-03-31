@@ -1751,7 +1751,7 @@ img {
   display: block;
   max-width: 100%; }
 
-header {
+.header-home {
   height: 100vh;
   background-color: #745b9a; }
 

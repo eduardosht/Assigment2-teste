@@ -4,12 +4,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Entre no FLUXO</title>
-		<meta name="description" content="Recrutador ou designer, está com dificuldades em contratar ou ser contratado? Estamos aqui para ajudar!">
+		<meta name="description" content="Recrutador ou designer, está com dificuldades em contratar ou ser contratado? Estamos aqui para ajudar! FLUXO é um projeto feito por alunos da Gama Academy">
 		
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
-		
+
 		<link rel="stylesheet" href="./dist/style.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<script>
+		function scrollToAnchor(aid){
+		    var aTag = $(aid);
+		    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+		}
+		</script>
 	</head>
 	<body>
 		<header class="header-home">
@@ -17,7 +24,7 @@
 				<div class="logo">
 					<div class="row">
 						<div class="col-12">
-							<img src="./assets/images/logo/fluxo-logo-default.png" alt="Entre no Fluxo" class="img-center">
+							<img src="./assets/images/logo/fluxo-logo-default-branco.png" alt="Entre no Fluxo" class="img-center">
 						</div>
 					</div>
 				</div>
@@ -25,76 +32,51 @@
 		</header>
 		
 		<main>
-			<section class="section section-0">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h1 class="txt-center">Landing Entre no Fluxo</h1>
-							<p class="txt-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas lectus dolor, nec congue leo placerat at. Aenean aliquam, neque nec iaculis ultricies.</p>
-							<a href="#" class="btn btn-large btn--orange img-center">CTA</a>
-						</div>
-					</div>
-				</div>
-			</section>
 
-			<section class="section section-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="img-content img-content--chamada1" style="background-image: url('https://cdn.vox-cdn.com/thumbor/VDjTI8b5e8-8XxJHoNKYVUsr6kQ=/0x0:1000x750/1200x800/filters:focal(420x295:580x455)/cdn.vox-cdn.com/uploads/chorus_image/image/56181247/joe_s_pizza_times_square.0.jpg')">
-								<p class="txt-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas lectus dolor.</p>
+
+			<section class="section section-0">
+				
+				<div class="section-info">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<h2 class="txt-center">Recrutador, já sentiu dificuldades em contratar um designer?</h2>
+								<h2 class="txt-center">Designer, está cansado de oportunidades confusas?</h2>
+
+								<p class="txt-center">Estamos aqui para ajudar! Preencha o formulário a seguir, e nos ajude a facilitar de uma vez por todas a conexão entre os designers e o que as empresas precisam!</p>
+								<a href="#" class="btn btn-large btn--orange img-center" onclick="scrollToAnchor('#form-section')">PREENCHA O FORMULÁRIO AGORA</a>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-4 itens">
-							<img src="http://www.boxbrosla.com/img/payment-via-square.jpg" alt="Texto 1">
-							<p class="txt-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div>
-						<div class="col-4 itens">
-							<img src="http://www.boxbrosla.com/img/payment-via-square.jpg" alt="Texto 1">
-							<p class="txt-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div>
-						<div class="col-4 itens">
-							<img src="http://www.boxbrosla.com/img/payment-via-square.jpg" alt="Texto 1">
-							<p class="txt-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div>
-					</div>
 				</div>
+				
+				<div class="caixa-info">
+					<h3>Quem somos nós</h3>
+					<p>FLUXO é um projeto multistack feito alunos da #12 Gama Experience</p>
+					<a href="#" onclick="scrollToAnchor('#form-section')" >Preencha o formulário agora</a>
+				</div>
+				<div class="image-background"></div>
 			</section>
 
-			<section class="section section-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="" class="btn btn-small btn--roxo img-center">CTA</a>
-						</div>
-						<div class="col-6">
-							<img src="https://www.ivytech.edu/images/Ivy-Tech-Vertical-Logo-Black.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="section section-3">
+			<section class="section section-3" id="form-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
 
 							<form id="main-form" action="">
 								
-								
+								<input type="hidden" id="user-ip" name="ip" value="">
+
 								<!-- GERAL - STEP 1 -->
 								<div class="first-step">
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box">
 												<label for="nome">Nome</label>
 												<input type="text" name="nome">
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box">
 												<label for="email">E-mail</label>
 												<input type="text" name="email">
@@ -102,18 +84,6 @@
 										</div>
 									
 									</div>
-
-									<div class="row">
-										<div class="col-12">
-											<p class="input-box radio-input">
-												<label for="tipo">Eu sou</label>
-												<label for="tipo" class="error" style="display:none;"></label>
-												<input type="radio" name="tipo" value="B2C"> Designer<br>
-												<input type="radio" name="tipo" value="B2B"> Recrutador
-											</p>
-										</div>
-									</div>
-									
 
 									<div class="row">
 										<div class="col-12">
@@ -130,10 +100,10 @@
 									<div class="row">
 										<div class="col-12">
 											<p class="input-box radio-input">
-												<label for="desejo_mdigital">Você trabalha/quer trabalhar no mercado digital?</label>
-												<label for="desejo_mdigital" class="error" style="display:none;"></label>
-												<input type="radio" name="desejo_mdigital" value="Sim"> Sim<br>
-												<input type="radio" name="desejo_mdigital" value="Não"> Não
+												<label for="tipo">Eu sou</label>
+												<label for="tipo" class="error" style="display:none;"></label>
+												<input type="radio" name="tipo" value="B2C"> Designer<br>
+												<input type="radio" name="tipo" value="B2B"> Recrutador
 											</p>
 										</div>
 									</div>
@@ -146,7 +116,7 @@
 								<!-- DESIGNER - STEP 2 -->
 								<div class="second-step-B2C">
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_1">Em um processo seletivo, o que você sente que valorizam mais em você?</label>
 												<label for="b2c_quest_1" class="error" style="display:none;"></label>
@@ -159,7 +129,7 @@
 												</span>
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_2">Você acha que as provas de habilidades específicas medem bem as habilidades necessárias?</label>
 												<label for="b2c_quest_2" class="error" style="display:none;"></label>
@@ -171,7 +141,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_3">O que mais te frustra durante a realização destas provas técnicas em processos seletivos?</label>
 												<label for="b2c_quest_3" class="error" style="display:none;"></label>
@@ -184,7 +154,7 @@
 												</span>
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_4">Você já foi contratado pelas suas habilidades, mas raramente as utilizou?</label>
 												<label for="b2c_quest_4" class="error" style="display:none;"></label>
@@ -195,7 +165,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_5">Se sim, como você se sentiu?</label>
 												<label for="b2c_quest_5" class="error" style="display:none;"></label>
@@ -208,7 +178,7 @@
 												</span>
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_6">O que é essencial para um bom processo seletivo de UX design?</label>
 												<label for="b2c_quest_6" class="error" style="display:none;"></label>
@@ -224,7 +194,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2c_quest_7">O que enfraquece um processo de seleção para UX Design?</label>
 												<label for="b2c_quest_7" class="error" style="display:none;"></label>
@@ -250,7 +220,7 @@
 								<!-- RECRUTADOR - STEP 2 -->
 								<div class="second-step-B2B">
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2b_quest_1">Durante um processo seletivo, o que a sua empresa mais valoriza no candidato?</label>
 												<label for="b2b_quest_1" class="error" style="display:none;"></label>
@@ -263,7 +233,7 @@
 												</span>
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2b_quest_2">Em quais critérios sua empresa se baseia para definir um teste técnico: </label>
 												<label for="b2b_quest_2" class="error" style="display:none;"></label>
@@ -279,7 +249,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2b_quest_3">Os critérios da empresa são validados através dos testes atuais?</label>
 												<label for="b2b_quest_3" class="error" style="display:none;"></label>
@@ -288,7 +258,7 @@
 												<input type="radio" name="b2b_quest_3" value="Não, mas não sabemos quais testes utilizar para uma contratação mais eficiente"> Não, mas não sabemos quais testes utilizar para uma contratação mais eficiente.
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2b_quest_4">A sua empresa já fez uma contratação equivocada devido a dificuldades na hora do recrutamento?</label>
 												<label for="b2b_quest_4" class="error" style="display:none;"></label>
@@ -300,7 +270,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box checked-input checkeboxes-quest5">
 												<label for="b2b_quest_5">Caso tenha respondido “sim”, qual foi o equívoco?</label>
 												<label for="b2b_quest_5" class="error" style="display:none;"></label>
@@ -312,7 +282,7 @@
 												</span>
 											</p>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2b_quest_6">O que vocês fazem quando identificam que um profissional contratado não se encaixa às competências necessárias?</label>
 												<label for="b2b_quest_6" class="error" style="display:none;"></label>
@@ -328,7 +298,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-12">
 											<p class="input-box radio-input">
 												<label for="b2b_quest_7">Você tem interesse em contratar uma empresa para terceirizar o recrutamento de designers?</label>
 												<label for="b2b_quest_7" class="error" style="display:none;"></label>
@@ -361,11 +331,11 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
-						<img src="http://africanbrains.net/edusa/wp-content/uploads/2011/12/Samsung-logo-small.gif" alt="">
+					<div class="col-lg-2 col-md-4 col-12">
+						<img src="./assets/images/logo/fluxo-logo-default-branco.png" alt="Logo Entre no Fluxo">
 					</div>
-					<div class="col-6 txt-right">
-						<p>Lorem ipsum dolor sit amet.</p>
+					<div class="col-lg-10 col-md-8 col-12 txt-center">
+						<p>Copyright © 2018 - FLUXO é um projeto feito por alunos da Gama Academy</p>
 					</div>
 				</div>
 			</div>

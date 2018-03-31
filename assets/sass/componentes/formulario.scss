@@ -3,11 +3,15 @@ input {
 }
 .input-box {
     margin-bottom: 20px;
-
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: 1px;
+    
     label {
 	    display: block;
-	    font-size: 28px;
-	    color: #f37a29;
+	    font-size: 20px;
+	    color: #FFF;
 	    margin-bottom: 10px;
 
 	    &.error {

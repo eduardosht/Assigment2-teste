@@ -1660,11 +1660,15 @@ input {
   outline: none !important; }
 
 .input-box {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: 1px; }
   .input-box label {
     display: block;
-    font-size: 28px;
-    color: #f37a29;
+    font-size: 20px;
+    color: #FFF;
     margin-bottom: 10px; }
     .input-box label.error {
       font-size: 16px;
@@ -1712,15 +1716,16 @@ input {
   background-color: #a2a2a2;
   padding: 20px;
   color: #FFF;
-  text-transform: uppercase;
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: 400;
   text-decoration: none;
   text-align: center;
   display: block;
   border-radius: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 100%; }
   .btn-large {
-    width: 500px; }
+    width: 590px; }
   .btn-small {
     width: 390px; }
   .btn-full {
@@ -1751,51 +1756,87 @@ img {
   display: block;
   max-width: 100%; }
 
+body {
+  background-color: #c3c3c3;
+  font-family: 'Roboto Slab', serif; }
+
 .header-home {
-  height: 100vh;
-  background-color: #745b9a; }
+  background-color: #303030;
+  height: 135px; }
+  .header-home .img-center {
+    max-height: 80px;
+    padding: 25px 0;
+    box-sizing: content-box; }
 
-.logo img {
-  margin-top: 40px;
-  margin-bottom: 60px; }
-
-.conteudo-header h1 {
-  font-size: 80px;
-  color: #FFF;
-  margin-bottom: 40px;
-  font-weight: bold;
-  max-width: 1080px;
-  margin: 0 auto 40px auto; }
-
-.conteudo-header p {
-  font-size: 50px;
-  font-weight: 300;
-  color: #FFF;
-  margin-bottom: 50px;
-  max-width: 1080px;
-  margin: 40px auto 40px auto; }
-
-.img-content.img-content {
-  height: 690px;
-  width: 100%;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  margin-top: -150px;
-  margin-bottom: 50px; }
-  .img-content.img-content p {
+.section-0 {
+  position: relative; }
+  .section-0 .section-info {
+    background-image: url(../assets/images/filtro-roxo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50px;
+    height: 900px;
     position: absolute;
-    bottom: 50px;
-    left: 0;
-    color: #FFF;
-    font-size: 26px;
-    width: 100%;
-    padding: 0 40px; }
+    top: 0;
+    width: 100%; }
+    .section-0 .section-info h2 {
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 58px;
+      width: 920px;
+      margin: 0 auto 40px auto;
+      letter-spacing: 2px;
+      color: #FFF;
+      margin-bottom: 30px; }
+    .section-0 .section-info p {
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      font-weight: 300;
+      color: #FFF;
+      margin-bottom: 50px; }
+  .section-0 .image-background {
+    background-image: url(../assets/images/fluxo-time.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1280px; }
 
-.itens p {
-  font-size: 26px;
-  padding: 0 20px;
-  margin: 40px 0; }
+.caixa-info {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  background-color: #FFF;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center; }
+  .caixa-info::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 45px 40px 0px 0;
+    border-color: transparent #ffffff transparent transparent; }
+  .caixa-info h3 {
+    color: #f37a29;
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .caixa-info p {
+    color: #f37a29;
+    line-height: 19px;
+    margin-bottom: 10px; }
+  .caixa-info a {
+    background-color: #745b9a;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px;
+    display: block; }
 
 .section-2 {
   background-color: #f37a29;
@@ -1816,16 +1857,97 @@ img {
     margin-top: -120px; }
 
 .section-3 {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background-color: #f37a29; }
 
 footer {
-  background-color: #f37a29;
+  background-color: #303030;
   padding: 20px; }
   footer .container > .row {
     align-items: center; }
   footer p {
-    font-size: 26px;
+    font-size: 18px;
+    line-height: 24px;
     color: #FFF; }
+  footer img {
+    max-height: 80px;
+    box-sizing: content-box; }
+
+@media screen and (max-width: 991px) {
+  .section-0 .caixa-info {
+    bottom: 60px;
+    right: 0;
+    left: 0;
+    margin: 0 auto; }
+    .section-0 .caixa-info::after {
+      border-width: 0 30px 40px 30px;
+      border-color: transparent transparent #FFF transparent;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .section-0 .image-background {
+    height: 1028px; }
+  .section-0 .section-info {
+    background-image: none;
+    height: 700px;
+    background-color: rgba(84, 62, 119, 0.9); }
+    .section-0 .section-info h2 {
+      width: 100%;
+      font-size: 38px;
+      line-height: 48px; }
+    .section-0 .section-info p {
+      font-size: 24px;
+      line-height: 30px; }
+  .section-0 .btn {
+    font-size: 26px; }
+  .input-box label {
+    font-size: 24px;
+    line-height: 30px; } }
+
+@media screen and (max-width: 767px) {
+  footer img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-height: 60px; }
+  .input-box input[type="text"] {
+    padding: 10px; } }
+
+@media screen and (max-width: 480px) {
+  .header-home {
+    height: 110px; }
+    .header-home .img-center {
+      max-height: 60px; }
+  .section-0 .caixa-info {
+    bottom: 60px;
+    right: 0;
+    left: 0;
+    margin: 0 auto; }
+    .section-0 .caixa-info::after {
+      border-width: 0 30px 40px 30px;
+      border-color: transparent transparent #FFF transparent;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .section-0 .image-background {
+    height: 880px; }
+  .section-0 .section-info {
+    height: auto;
+    padding-bottom: 60px; }
+    .section-0 .section-info h2 {
+      font-size: 26px;
+      line-height: 30px; }
+    .section-0 .section-info p {
+      font-size: 18px;
+      line-height: 24px; }
+  .section-0 .btn {
+    font-size: 18px;
+    line-height: 23px; }
+  .input-box label {
+    font-size: 18px;
+    line-height: 24px; }
+  footer p {
+    font-size: 14px;
+    line-height: 20px; } }
 
 header.obrigado-header {
   height: 100px;

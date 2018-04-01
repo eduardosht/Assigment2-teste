@@ -22,22 +22,25 @@ input[type="radio"], input[type="checkbox"] {
 	    margin-bottom: 20px;
 
 	    &.error {
-		    font-size: 16px;
-		    margin-top: 10px;
-		    color: #000;
-		    letter-spacing: 2px;
-		    position: relative;
+			font-size: 16px;
+			margin-top: 10px;
+			line-height: 19px;
+			color: #ff3636;
+			letter-spacing: 2px;
+			position: relative;
+			padding: 10px;
+			background-color: #000;
 
 		    &::before {
-				content: '';
-				display: inline-block;
-				background-color: #6d5b97;
-				width: 12px;
-				vertical-align: middle;
-				height: 12px;
-				border-radius: 30px;
-				margin-top: -3px;
-				margin-right: 10px;
+			    content: '';
+			    display: inline-block;
+			    background-color: #e73636;
+			    width: 12px;
+			    vertical-align: middle;
+			    height: 12px;
+			    border-radius: 30px;
+			    margin-top: -3px;
+			    margin-right: 10px;
 		    }
 	    }
     }
@@ -67,11 +70,14 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .outros-input label.error {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #000;
-    letter-spacing: 2px;
-    margin-left: 0;
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 19px;
+	color: #ff3636;
+	letter-spacing: 2px;
+	position: relative;
+	padding: 10px;
+	background-color: #000;
 }
 #obrigado-box {
 	padding: 30px;

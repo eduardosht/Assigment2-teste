@@ -1680,13 +1680,16 @@ input[type="radio"], input[type="checkbox"] {
     .input-box label.error {
       font-size: 16px;
       margin-top: 10px;
-      color: #000;
+      line-height: 19px;
+      color: #ff3636;
       letter-spacing: 2px;
-      position: relative; }
+      position: relative;
+      padding: 10px;
+      background-color: #000; }
       .input-box label.error::before {
         content: '';
         display: inline-block;
-        background-color: #6d5b97;
+        background-color: #e73636;
         width: 12px;
         vertical-align: middle;
         height: 12px;
@@ -1715,13 +1718,19 @@ input[type="radio"], input[type="checkbox"] {
 .outros-input label.error {
   font-size: 16px;
   margin-top: 10px;
-  color: #000;
+  line-height: 19px;
+  color: #ff3636;
   letter-spacing: 2px;
-  margin-left: 0; }
+  position: relative;
+  padding: 10px;
+  background-color: #000; }
 
 #obrigado-box {
   padding: 30px;
   display: none; }
+  @media screen and (max-width: 480px) {
+    #obrigado-box {
+      padding: 30px 0; } }
   #obrigado-box .title {
     font-size: 50px;
     line-height: 60px;
@@ -1742,6 +1751,9 @@ input[type="radio"], input[type="checkbox"] {
     margin-right: 30px; }
     #obrigado-box .share-links ul li:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      #obrigado-box .share-links ul li img {
+        width: 45px; } }
 
 .btn {
   background-color: #a2a2a2;
@@ -1749,6 +1761,7 @@ input[type="radio"], input[type="checkbox"] {
   color: #FFF;
   font-size: 30px;
   font-weight: 400;
+  border: 0;
   text-decoration: none;
   text-align: center;
   display: block;

@@ -12,7 +12,6 @@
 		$( "#next" ).on( 'click', function() {
 
 			if ( $("#main-form").valid() ) {
-				
 				var tipoUsuario = $('input[name=tipo]:checked').val();
 
 				$('.first-step').fadeOut( "fast", function() {
@@ -20,11 +19,17 @@
 				});
 			}
 
-		}); 
+		});
 
 		$('.finalizar-form').on( 'click', function(e) {
 			e.preventDefault();
 			if ( $( "#main-form" ).valid() ) {
+				var tipoUsuario = $('input[name=tipo]:checked').val();
+				if ( tipoUsuario == 'B2B' ) {
+					enviaDataDB_recrutador();
+				} else {
+					enviaDataDB_designer();
+				}
 				$( "#main-form" ).fadeOut( "fast", function() {
 					$( '#obrigado-box' ).fadeIn();
 				});

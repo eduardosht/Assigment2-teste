@@ -6,6 +6,8 @@ function enviaDataDB_designer() {
   event.preventDefault();
 
   // Primeiro form
+  var Userip = document.getElementById('Userip');
+
   var InputNome = document.getElementById('InputNome');
   var InputEmail = document.getElementById('InputEmail');
   var RadioCategoria = document.querySelector('.RadioCategoriaProfissional input:checked');
@@ -33,7 +35,7 @@ function enviaDataDB_designer() {
 
   var ButtonFinaliza = document.querySelector('.FinalizaDesign');
 
-  createData1(InputNome.value,InputEmail.value,RadioCategoria.value,RadioExperiencia.value);
+  createData1(Userip.value, InputNome.value,InputEmail.value,RadioCategoria.value,RadioExperiencia.value);
   createData2(RadioDesign1.value,InputDesign1.value,RadioDesign2.value,RadioDesign3.value,InputDesign3.value,
   RadioDesign4.value,RadioDesign5.value,InputDesign5.value,RadioDesign6.value,InputDesign6.value,
   RadioDesign7.value,InputDesign7.value);
@@ -48,6 +50,8 @@ function enviaDataDB_recrutador() {
   event.preventDefault();
 
   // Primeiro form
+  var Userip = document.getElementById('Userip');
+
   var InputNome = document.getElementById('InputNome');
   var InputEmail = document.getElementById('InputEmail');
   var RadioCategoria = document.querySelector('.RadioCategoriaProfissional input:checked');
@@ -75,7 +79,7 @@ function enviaDataDB_recrutador() {
 
   var ButtonFinaliza2 = document.querySelector('.FinalizaRecrutador');
 
-  createData1(InputNome.value,InputEmail.value,RadioCategoria.value,RadioExperiencia.value);
+  createData1(Userip.value,InputNome.value,InputEmail.value,RadioCategoria.value,RadioExperiencia.value);
   createData3(RadioRecrutador1.value,InputRecrutador1.value,RadioRecrutador2.value,InputRecrutador2.value,RadioRecrutador3.value,
   RadioRecrutador4.value,RadioRecrutador5.value,InputRecrutador5.value,RadioRecrutador6.value,InputRecrutador6.value,
   RadioRecrutador7.value,InputRecrutador7.value);
@@ -85,8 +89,9 @@ function enviaDataDB_recrutador() {
 }
 
 
-function createData1(nome,email,categoria,experiencia){
+function createData1(userip,nome,email,categoria,experiencia){
 data1={
+userip: userip,
 nome:nome,
 email:email,
 categoria:categoria,

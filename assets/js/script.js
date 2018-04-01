@@ -224,7 +224,7 @@
 		});
 
 		$.get("http://ipinfo.io", function(response) {
-		    $('#user-ip').val(response.ip);
+		    $('#Userip').val(response.ip);
 		}, "jsonp");
 	});
 } )( jQuery );

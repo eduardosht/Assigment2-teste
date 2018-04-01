@@ -1,18 +1,25 @@
 input {
 	outline: none !important;
 }
+input[type="radio"], input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
 .input-box {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: #000;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     
     label {
 	    display: block;
 	    font-size: 20px;
 	    color: #FFF;
-	    margin-bottom: 10px;
+	    margin-bottom: 20px;
 
 	    &.error {
 		    font-size: 16px;
@@ -22,15 +29,15 @@ input {
 		    position: relative;
 
 		    &::before {
-			    content: '';
-			    display: inline-block;
-			    background-color: #da1313;
-			    width: 12px;
-			    vertical-align: top;
-			    height: 12px;
-			    border-radius: 30px;
-			    margin-top: 2px;
-			    margin-right: 10px;
+				content: '';
+				display: inline-block;
+				background-color: #6d5b97;
+				width: 12px;
+				vertical-align: middle;
+				height: 12px;
+				border-radius: 30px;
+				margin-top: -3px;
+				margin-right: 10px;
 		    }
 	    }
     }
@@ -65,4 +72,41 @@ input {
     color: #000;
     letter-spacing: 2px;
     margin-left: 0;
+}
+#obrigado-box {
+	padding: 30px;
+	display: none;
+
+	.title {
+	    font-size: 50px;
+	    line-height: 60px;
+	    color: #FFF;
+	    font-weight: bold;
+	    margin-bottom: 20px;
+	}
+
+	.desc {
+	    font-size: 28px;
+	    font-weight: 300;
+	    color: #FFF;
+	    margin-bottom: 40px;
+	}
+
+	.share-links {
+
+		p {
+		    font-size: 23px;
+		    letter-spacing: 1px;
+		    margin-bottom: 30px;
+		}
+
+		ul li {
+		    display: inline-block;
+		    margin-right: 30px;
+
+		    &:last-child {
+		    	margin-right: 0;
+		    }
+		}
+	}
 }

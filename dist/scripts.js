@@ -234,5 +234,8 @@
 		$.get("http://ipinfo.io", function(response) {
 		    $('#Userip').val(response.ip);
 		}, "jsonp");
+
+		$('#dateTime').val( getDate_beautyFormat() );
+
 	});
 } )( jQuery );

@@ -41,7 +41,7 @@ function enviaDataDB_designer() {
   RadioDesign4.value,RadioDesign5.value,InputDesign5.value,RadioDesign6.value,InputDesign6.value,
   RadioDesign7.value,InputDesign7.value);
 
-  console.log(data2);
+  //console.log(data2);
 
   createDataDesigner();
 }
@@ -86,7 +86,7 @@ function enviaDataDB_recrutador() {
   RadioRecrutador4.value,RadioRecrutador5.value,InputRecrutador5.value,RadioRecrutador6.value,InputRecrutador6.value,
   RadioRecrutador7.value,InputRecrutador7.value);
 
-  console.log(data3);
+  //console.log(data3);
   createDataRecrutador();
 }
 
@@ -147,28 +147,27 @@ async function verificaEmails(){
 
   await firebase.database().ref("designer").on("value", function(snapshot){
 
-    console.log("comeco");
+    //console.log("comeco");
     var x = snapshot.forEach(function (item){
 
-      console.log(item.val().data1.email);
-    if(InputEmail.value == item.val().data1.email){
-        return false;
-    }
-
-});
-});
+      //console.log(item.val().data1.email);
+      if(InputEmail.value == item.val().data1.email){
+          return false;
+      }
+    });
+  });
 }
 
 async function createDataDesigner(){
   var dataDesigner={data1,data2};
-  console.log(dataDesigner);
+  //console.log(dataDesigner);
 
   await firebase.database().ref().child("designer").push(dataDesigner);
 }
 
 async function createDataRecrutador(){
   var dataRecrutador={data1,data3};
-  console.log(dataRecrutador);
+  //console.log(dataRecrutador);
 
   await firebase.database().ref().child("recrutador").push(dataRecrutador);
 }

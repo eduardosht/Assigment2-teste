@@ -76,6 +76,9 @@ input[type="radio"], input[type="checkbox"] {
 #obrigado-box {
 	padding: 30px;
 	display: none;
+	@media screen and ( max-width: 480px ) {
+		padding: 30px 0;
+	}
 
 	.title {
 	    font-size: 50px;
@@ -103,9 +106,13 @@ input[type="radio"], input[type="checkbox"] {
 		ul li {
 		    display: inline-block;
 		    margin-right: 30px;
-
 		    &:last-child {
 		    	margin-right: 0;
+		    }
+		    @media screen and ( max-width: 480px ) {
+				img {
+					width: 45px;
+				}
 		    }
 		}
 	}

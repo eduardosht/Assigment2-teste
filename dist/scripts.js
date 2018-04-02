@@ -97,7 +97,12 @@
 
 				b2c_quest_4: "required",
 
-				b2c_quest_5: "required",
+				b2c_quest_5: {
+					required: function (element) {
+						if ( $( ".RadioDesign4 input:checked" ).val() == 'Sim' ) { return true; }
+						else { return false; }  
+					}  
+				},
 				b2c_quest_5_outro: {
 					required: true,
 					maxlength: 100

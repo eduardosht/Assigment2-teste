@@ -1903,6 +1903,20 @@ body {
 .section-3 {
   padding: 50px 0;
   background-color: #f37a29; }
+  .section-3 h3 {
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFF;
+    max-width: 640px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    width: 90%;
+    margin-right: auto; }
+    @media screen and (max-width: 480px) {
+      .section-3 h3 {
+        font-size: 28px;
+        line-height: 35px; } }
 
 footer {
   background-color: #303030;

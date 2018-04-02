@@ -28,6 +28,12 @@ function enviaDataDB_designer() {
   var RadioDesign5 = document.querySelector('.RadioDesign5 input:checked');
   var InputDesign5 = document.getElementById('InputDesign5');
 
+  if ( RadioDesign5 ) {
+    var radioDesign5_op = RadioDesign5.value;
+  } else {
+    var radioDesign5_op = '';
+  }
+
   var RadioDesign6 = document.querySelector('.RadioDesign6 input:checked');
   var InputDesign6 = document.getElementById('InputDesign6');
 
@@ -38,7 +44,7 @@ function enviaDataDB_designer() {
 
   createData1(dateTime.value,Userip.value, InputNome.value,InputEmail.value,RadioCategoria.value,RadioExperiencia.value);
   createData2(RadioDesign1.value,InputDesign1.value,RadioDesign2.value,RadioDesign3.value,InputDesign3.value,
-  RadioDesign4.value,RadioDesign5.value,InputDesign5.value,RadioDesign6.value,InputDesign6.value,
+  RadioDesign4.value,radioDesign5_op,InputDesign5.value,RadioDesign6.value,InputDesign6.value,
   RadioDesign7.value,InputDesign7.value);
 
   //console.log(data2);

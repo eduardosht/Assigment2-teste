@@ -76,7 +76,7 @@
 				b2c_quest_1: "required",
 				b2c_quest_1_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2c_quest_2: "required",
@@ -84,7 +84,7 @@
 				b2c_quest_3: "required",
 				b2c_quest_3_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2c_quest_4: "required",
@@ -97,31 +97,31 @@
 				},
 				b2c_quest_5_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2c_quest_6: "required",
 				b2c_quest_6_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2c_quest_7: "required",
 				b2c_quest_7_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2b_quest_1: "required",
 				b2b_quest_1_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2b_quest_2: "required",
 				b2b_quest_2_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2b_quest_3: "required",
@@ -130,19 +130,19 @@
 				b2b_quest_5: "required",
 				b2b_quest_5_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2b_quest_6: "required",
 				b2b_quest_6_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 
 				b2b_quest_7: "required",
 				b2b_quest_7_outro: {
 					required: true,
-					maxlength: 100
+					maxlength: 255
 				},
 			},
 			messages: {
@@ -161,7 +161,7 @@
 				b2c_quest_1: "Selecione uma das opções",
 				b2c_quest_1_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2c_quest_2: "Selecione uma das opções",
@@ -169,7 +169,7 @@
 				b2c_quest_3: "Selecione uma das opções",
 				b2c_quest_3_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2c_quest_4: "Selecione uma das opções",
@@ -177,31 +177,31 @@
 				b2c_quest_5: "Selecione uma das opções",
 				b2c_quest_5_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2c_quest_6: "Selecione uma das opções",
 				b2c_quest_6_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2c_quest_7: "Selecione uma das opções",
 				b2c_quest_7_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2b_quest_1: "Selecione uma das opções",
 				b2b_quest_1_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2b_quest_2: "Selecione uma das opções",
 				b2b_quest_2_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2b_quest_3: "Selecione uma das opções",
@@ -210,19 +210,19 @@
 				b2b_quest_5: "Selecione uma das opções",
 				b2b_quest_5_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2b_quest_6: "Selecione uma das opções",
 				b2b_quest_6_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 				b2b_quest_7: "Selecione uma das opções",
 				b2b_quest_7_outro: {
 					required: "Esse campo é obrigatório",
-					maxlength: "Foi ultrapassado o máximo de 100 caracteres"
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
 				},
 
 			}

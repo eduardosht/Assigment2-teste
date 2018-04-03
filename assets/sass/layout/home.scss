@@ -19,7 +19,7 @@ body {
     	background-image: url(../assets/images/filtro-roxo.png);
 	    background-size: cover;
 	    background-repeat: no-repeat;
-	    background-position: center;
+	    background-position: center bottom;
 	    padding-top: 50px;
 	    height: 900px;
 	    position: absolute;
@@ -58,7 +58,7 @@ body {
 .caixa-info {
     position: absolute;
     bottom: 10%;
-    right: 20%;
+    right: 40%;
     background-color: #FFF;
     width: 300px;
     border-radius: 10px;
@@ -80,13 +80,14 @@ body {
 	h3 {
 	    color: #f37a29;
 	    font-size: 30px;
-	    margin-bottom: 10px;
+	    margin-bottom: 15px;
 	}
 
 	p {
 	    color: #f37a29;
-	    line-height: 19px;
-	    margin-bottom: 10px;
+	    font-size: 19px;
+	    line-height: 24px;
+	    margin-bottom: 15px;
 	}
 
 	a {

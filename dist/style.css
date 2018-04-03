@@ -1682,6 +1682,7 @@ input[type="radio"], input[type="checkbox"] {
       margin-top: 10px;
       line-height: 19px;
       color: #ff3636;
+      width: 100%;
       letter-spacing: 2px;
       position: relative;
       padding: 10px;
@@ -1755,6 +1756,55 @@ input[type="radio"], input[type="checkbox"] {
       #obrigado-box .share-links ul li img {
         width: 45px; } }
 
+.radio-input-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .radio-input-btn {
+      flex-direction: column;
+      align-items: center; } }
+  .radio-input-btn small {
+    font-size: 18px;
+    display: block;
+    color: #FFF;
+    margin-bottom: 40px; }
+  .radio-input-btn input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden; }
+    .radio-input-btn input:checked + .label {
+      background-color: #353535;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .radio-input-btn .label {
+    display: inline-block;
+    width: 45%;
+    padding: 24px 5px;
+    margin-right: -4px;
+    vertical-align: middle;
+    background-color: #6d5b97;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+    .radio-input-btn .label:hover {
+      cursor: pointer; }
+    @media (max-width: 767px) {
+      .radio-input-btn .label {
+        padding: 20px 5px;
+        font-size: 22px;
+        width: 80%; } }
+
 .btn {
   background-color: #a2a2a2;
   padding: 20px;
@@ -1818,7 +1868,7 @@ body {
     background-image: url(../assets/images/filtro-roxo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     padding-top: 50px;
     height: 900px;
     position: absolute;
@@ -1850,7 +1900,7 @@ body {
 .caixa-info {
   position: absolute;
   bottom: 10%;
-  right: 20%;
+  right: 40%;
   background-color: #FFF;
   width: 300px;
   border-radius: 10px;
@@ -1869,11 +1919,12 @@ body {
   .caixa-info h3 {
     color: #f37a29;
     font-size: 30px;
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
   .caixa-info p {
     color: #f37a29;
-    line-height: 19px;
-    margin-bottom: 10px; }
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 15px; }
   .caixa-info a {
     background-color: #745b9a;
     text-decoration: none;

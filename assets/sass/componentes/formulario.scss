@@ -105,22 +105,39 @@ input[type="radio"], input[type="checkbox"] {
 	.share-links {
 
 		p {
-		    font-size: 23px;
+		    font-size: 38px;
 		    letter-spacing: 1px;
 		    margin-bottom: 30px;
+		    margin-top: 60px;
+		    color: #FFF;
+
+		    @media screen and ( max-width: 575px ) {
+		    	font-size: 30px;
+		    }
 		}
 
-		ul li {
-		    display: inline-block;
-		    margin-right: 30px;
-		    &:last-child {
-		    	margin-right: 0;
-		    }
-		    @media screen and ( max-width: 480px ) {
-				img {
-					width: 45px;
-				}
-		    }
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+	    	li {
+			    display: inline-block;
+			    margin-right: 30px;
+			    &:last-child {
+			    	margin-right: 0;
+			    }
+			    @media screen and ( max-width: 575px ) {
+					img {
+					    width: 90px;
+					}
+			    }
+
+			    &.whatsapp-share {
+		    		@media screen and ( max-width: 767px ) {
+						display: inline-block !important;
+		    		}
+			    }
+			}
 		}
 	}
 }

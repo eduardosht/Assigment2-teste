@@ -1744,17 +1744,29 @@ input[type="radio"], input[type="checkbox"] {
     color: #FFF;
     margin-bottom: 40px; }
   #obrigado-box .share-links p {
-    font-size: 23px;
+    font-size: 38px;
     letter-spacing: 1px;
-    margin-bottom: 30px; }
-  #obrigado-box .share-links ul li {
-    display: inline-block;
-    margin-right: 30px; }
-    #obrigado-box .share-links ul li:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 480px) {
-      #obrigado-box .share-links ul li img {
-        width: 45px; } }
+    margin-bottom: 30px;
+    margin-top: 60px;
+    color: #FFF; }
+    @media screen and (max-width: 575px) {
+      #obrigado-box .share-links p {
+        font-size: 30px; } }
+  #obrigado-box .share-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #obrigado-box .share-links ul li {
+      display: inline-block;
+      margin-right: 30px; }
+      #obrigado-box .share-links ul li:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 575px) {
+        #obrigado-box .share-links ul li img {
+          width: 90px; } }
+      @media screen and (max-width: 767px) {
+        #obrigado-box .share-links ul li.whatsapp-share {
+          display: inline-block !important; } }
 
 .radio-input-btn {
   display: flex;

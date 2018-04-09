@@ -1666,70 +1666,49 @@ input[type="radio"], input[type="checkbox"] {
   margin-top: 0px;
   margin-bottom: 5px; }
 
-label {
-  display: block;
-  font-size: 20px;
-  color: #FFF;
-  margin-bottom: 10px;
-  margin-top: 30px; }
-  label.error {
-    font-size: 16px;
-    margin-top: 10px;
-    line-height: 19px;
-    color: #ff3636;
-    width: 100%;
-    letter-spacing: 2px;
-    position: relative;
-    padding: 10px;
-    background-color: #000; }
-    label.error::before {
-      content: '';
-      display: inline-block;
-      background-color: #e73636;
-      width: 12px;
-      vertical-align: middle;
-      height: 12px;
-      border-radius: 30px;
-      margin-top: -3px;
-      margin-right: 10px; }
-
-input[type="text"],
-input[type="email"] {
-  display: block;
-  width: 100%;
-  border: 2px solid #f37a29;
-  padding: 20px;
-  font-size: 18px;
-  color: #f37a29; }
-
-.mc-field-group.input-group {
-  display: block;
-  margin-top: 30px; }
-  .mc-field-group.input-group strong {
+.input-box {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: 0.5px; }
+  .input-box label {
     display: block;
     font-size: 20px;
     color: #FFF;
-    margin-bottom: 20px;
-    margin-top: 30px; }
-  .mc-field-group.input-group label {
-    display: inline-block;
-    margin: 0 0 5px 6px; }
-
-#mc-embedded-subscribe {
-  margin-top: 40px;
-  padding: 20px;
-  color: #FFF;
-  background-color: #6d5b97;
-  font-size: 30px;
-  font-weight: 400;
-  width: 100%;
-  border: 0;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  border-radius: 10px;
-  cursor: pointer;
-  max-width: 100%; }
+    margin-bottom: 20px; }
+    .input-box label.error {
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 19px;
+      color: #ff3636;
+      width: 100%;
+      letter-spacing: 2px;
+      position: relative;
+      padding: 10px;
+      background-color: #000; }
+      .input-box label.error::before {
+        content: '';
+        display: inline-block;
+        background-color: #e73636;
+        width: 12px;
+        vertical-align: middle;
+        height: 12px;
+        border-radius: 30px;
+        margin-top: -3px;
+        margin-right: 10px; }
+  .input-box .outros-input input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px; }
+  .input-box input[type="text"] {
+    display: block;
+    width: 100%;
+    border: 2px solid #f37a29;
+    padding: 20px;
+    font-size: 18px;
+    color: #f37a29; }
 
 .second-step-B2C {
   display: none; }
@@ -1903,19 +1882,10 @@ body {
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-top: 50px;
-    height: 640px;
+    height: 900px;
     position: absolute;
     top: 0;
     width: 100%; }
-    .section-0 .section-info h1 {
-      font-weight: bold;
-      font-size: 65px;
-      line-height: 58px;
-      width: 920px;
-      margin: 0 auto 40px auto;
-      letter-spacing: 2px;
-      color: #FFF;
-      margin-bottom: 50px; }
     .section-0 .section-info h2 {
       font-weight: bold;
       font-size: 50px;
@@ -1923,7 +1893,8 @@ body {
       width: 920px;
       margin: 0 auto 40px auto;
       letter-spacing: 2px;
-      color: #FFF; }
+      color: #FFF;
+      margin-bottom: 30px; }
     .section-0 .section-info p {
       font-size: 28px;
       line-height: 36px;
@@ -1936,7 +1907,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 720px; }
+    height: 1280px; }
 
 .caixa-info {
   position: absolute;
@@ -2036,15 +2007,11 @@ footer {
       right: 0;
       margin: auto; }
   .section-0 .image-background {
-    height: 700px; }
+    height: 1028px; }
   .section-0 .section-info {
     background-image: none;
-    height: 530px;
+    height: 700px;
     background-color: rgba(84, 62, 119, 0.9); }
-    .section-0 .section-info h1 {
-      width: 100%;
-      font-size: 45px;
-      line-height: 50px; }
     .section-0 .section-info h2 {
       width: 100%;
       font-size: 38px;
@@ -2083,7 +2050,7 @@ footer {
       right: 0;
       margin: auto; }
   .section-0 .image-background {
-    height: 73vh; }
+    height: 880px; }
   .section-0 .section-info {
     height: auto;
     padding-bottom: 60px; }

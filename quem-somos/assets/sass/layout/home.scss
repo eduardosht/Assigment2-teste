@@ -21,21 +21,11 @@ body {
 	    background-repeat: no-repeat;
 	    background-position: center bottom;
 	    padding-top: 50px;
-	    height: 640px;
+	    height: 900px;
 	    position: absolute;
 	    top: 0;
 	    width: 100%;
-		
-		h1 {
-			font-weight: bold;
-			font-size: 65px;
-			line-height: 58px;
-			width: 920px;
-			margin: 0 auto 40px auto;
-			letter-spacing: 2px;
-			color: #FFF;
-			margin-bottom: 50px;
-		}
+
 		h2 {
 			font-weight: bold;
 			font-size: 50px;
@@ -44,6 +34,7 @@ body {
 			margin: 0 auto 40px auto;
 			letter-spacing: 2px;
 			color: #FFF;
+			margin-bottom: 30px;
 		}
 		p {
 		    font-size: 28px;
@@ -60,7 +51,7 @@ body {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 720px;
+		height: 1280px;
 	}
 }
 
@@ -196,18 +187,13 @@ footer {
 		}
 
 		.image-background {
-		    height: 700px;
+		    height: 1028px;
 		}
 
 		.section-info {
 		    background-image: none;
-		    height: 530px;
+		    height: 700px;
 		    background-color: rgba(84, 62, 119, 0.9);
-			h1 {
-				width: 100%;
-				font-size: 45px;
-				line-height: 50px;
-			}
 			h2 {
 			    width: 100%;
 			    font-size: 38px;
@@ -266,7 +252,7 @@ footer {
 		}
 
 		.image-background {
-	        height: 73vh;
+	        height: 880px;
 		}
 
 		.section-info {

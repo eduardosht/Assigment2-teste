@@ -9,64 +9,238 @@
 ( function($) {
     $(document).ready(function () {
 
-    	var $form = $("#mc-embedded-subscribe-form");
+		$( "#next" ).on( 'click', function() {
 
-		$('#mc-embedded-subscribe').on( 'click', function(e) {
+			if ( $("#main-form").valid() ) {
+				var tipoUsuario = $('input[name=tipo]:checked').val();
+
+				$('.first-step').fadeOut( "fast", function() {
+					$( '.second-step-'+tipoUsuario ).fadeIn();
+				});
+			}
+
+		});
+
+		$('.finalizar-form').on( 'click', function(e) {
 			e.preventDefault();
-			if ( $form.valid() ) {
-				
-				$(this).prop('disabled', true);
-				
-				enviaDataDB();
-				
-				setTimeout(
-					function() {
-						window.location = "http://entrenofluxo.com.br/obrigado";
-					}, 1000
-				);
+			if ( $( "#main-form" ).valid() ) {
+				var tipoUsuario = $('input[name=tipo]:checked').val();
+				if ( tipoUsuario == 'B2B' ) {
+					enviaDataDB_recrutador();
+				} else {
+					enviaDataDB_designer();
+				}
+				$( "#main-form" ).fadeOut( "fast", function() {
+					$( '#obrigado-box' ).fadeIn();
+				});
 			}
 		});
 
-		jQuery.validator.addMethod("fullName", function(value, element) {
-		    var name_filtered = value.split(' ').filter(function(v){return v!==''});
-		    if ( name_filtered.length > 1) {
-		        //two or more words
-		        return true;
-		    } else {
-		        //not enough words
-		        return false;
-		    }
-		  return this.optional( element ) || /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@(?:\S{1,63})$/.test( value );
-		}, 'Please enter a valid email address.');
+	    $("input[type='radio']").change( function() {
+	        var selectedValue 	  = $(this).val();
+	        var showInput 		  = $(this).parent().find('.outro-input');
+	        var cleanErrorMessage = $(this).parent().find('.error');
+
+	        if (selectedValue == "Outro" || selectedValue == "Já o faço" ) {
+	            showInput.show();
+	        } else {
+	            showInput.hide();
+	            cleanErrorMessage.hide();
+	        }
+	    });
+
+	    $("input[type='checkbox']").change( function() {
+	        var selectedValues 	  = $('.checkeboxes-quest5 input[type="checkbox"]:checked');
 
 
-		$form.validate({
+			$( selectedValues ).each(function( index ) {
+		        var showInput 		  = $(this).parent().find('.outro-input');
+		        var cleanErrorMessage = $(this).parent().find('.error');
+
+		        if ( $( this ).val() == "Outro" || $( this ).val() == "Já o faço" ) {
+		            showInput.show();
+		            return false;
+		        } else {
+		            showInput.hide();
+		            cleanErrorMessage.hide();
+		        }
+			});
+
+	    });
+
+		$("#main-form").validate({
 			rules: {
-				FNAME: {
-					required: true,
-					fullName: true
+				nome: {
+					required: true
 				},
-				EMAIL: {
+				email: {
 					required: true,
 					email: true
 				},
-				PROFISSAO: "required"
+				tipo: "required",
+				experiencia: "required",
+				desejo_mdigital: "required",
+
+				b2c_quest_1: "required",
+				b2c_quest_1_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2c_quest_2: "required",
+
+				b2c_quest_3: "required",
+				b2c_quest_3_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2c_quest_4: "required",
+
+				b2c_quest_5: {
+					required: function (element) {
+						if ( $( ".RadioDesign4 input:checked" ).val() == 'Sim' ) { return true; }
+						else { return false; }  
+					}  
+				},
+				b2c_quest_5_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2c_quest_6: "required",
+				b2c_quest_6_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2c_quest_7: "required",
+				b2c_quest_7_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2b_quest_1: "required",
+				b2b_quest_1_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2b_quest_2: "required",
+				b2b_quest_2_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2b_quest_3: "required",
+				b2b_quest_4: "required",
+
+				b2b_quest_5: "required",
+				b2b_quest_5_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2b_quest_6: "required",
+				b2b_quest_6_outro: {
+					required: true,
+					maxlength: 255
+				},
+
+				b2b_quest_7: "required",
+				b2b_quest_7_outro: {
+					required: true,
+					maxlength: 255
+				},
 			},
 			messages: {
 
-				FNAME: {
-					required: "Por favor preencha com seu nome completo",
-					fullName: "Digite seu nome completo"
+				nome: {
+					required: "Por favor preencha com seu nome completo"
 				},
-				EMAIL: {
+				email: {
 					required: "Por favor preencha com seu e-mail",
 					email: "Por favor preencha com um e-mail válido"
 				},
-				PROFISSAO: "Selecione uma das opções"
+				tipo: "Selecione uma das opções",
+				experiencia: "Selecione uma das opções",
+				desejo_mdigital: "Selecione uma das opções",
+
+				b2c_quest_1: "Selecione uma das opções",
+				b2c_quest_1_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2c_quest_2: "Selecione uma das opções",
+
+				b2c_quest_3: "Selecione uma das opções",
+				b2c_quest_3_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2c_quest_4: "Selecione uma das opções",
+
+				b2c_quest_5: "Selecione uma das opções",
+				b2c_quest_5_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2c_quest_6: "Selecione uma das opções",
+				b2c_quest_6_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2c_quest_7: "Selecione uma das opções",
+				b2c_quest_7_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2b_quest_1: "Selecione uma das opções",
+				b2b_quest_1_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2b_quest_2: "Selecione uma das opções",
+				b2b_quest_2_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2b_quest_3: "Selecione uma das opções",
+				b2b_quest_4: "Selecione uma das opções",
+
+				b2b_quest_5: "Selecione uma das opções",
+				b2b_quest_5_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2b_quest_6: "Selecione uma das opções",
+				b2b_quest_6_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
+				b2b_quest_7: "Selecione uma das opções",
+				b2b_quest_7_outro: {
+					required: "Esse campo é obrigatório",
+					maxlength: "Foi ultrapassado o máximo de 255 caracteres"
+				},
+
 			}
 		});
+
+		$.get("http://ipinfo.io", function(response) {
+		    $('#Userip').val(response.ip);
+		}, "jsonp");
+
+		$('#dateTime').val( getDate_beautyFormat() );
+
 	});
-
-	$('#dateTime').val( getDate_beautyFormat() );
-
 } )( jQuery );

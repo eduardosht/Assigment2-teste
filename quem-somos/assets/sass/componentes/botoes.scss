@@ -1,0 +1,27 @@
+.btn {
+    background-color: #a2a2a2;
+    padding: 20px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    border: 0;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 100%;
+
+	&-large {
+		width: 590px;
+	}
+	&-small {
+		width: 390px;
+	}
+	&-full {
+		width: 100%;
+	}
+
+	&--orange{ background-color: #f37a29; }
+	&--roxo{ background-color: #6d5b97; }
+}

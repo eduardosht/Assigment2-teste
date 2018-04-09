@@ -40,7 +40,7 @@ body {
 			font-weight: bold;
 			font-size: 50px;
 			line-height: 58px;
-			width: 920px;
+			width: 1100px;
 			margin: 0 auto 40px auto;
 			letter-spacing: 2px;
 			color: #FFF;
@@ -177,6 +177,13 @@ footer {
     }
 }
 
+@media screen and ( max-width: 1200px ) {
+	.section-0 .section-info h2 {
+	    font-size: 40px;
+	    line-height: 48px;
+	    width: 100%;
+	}
+}
 @media screen and ( max-width: 991px ) {
 	.section-0 {
 		
@@ -209,9 +216,8 @@ footer {
 				line-height: 50px;
 			}
 			h2 {
-			    width: 100%;
-			    font-size: 38px;
-			    line-height: 48px;
+			    font-size: 32px;
+			    line-height: 38px;
 			}
 			p {
 			    font-size: 24px;
@@ -228,7 +234,6 @@ footer {
 	    line-height: 30px;
 	}
 }
-
 @media screen and ( max-width: 767px ) {
 	footer img {
 	    display: block;

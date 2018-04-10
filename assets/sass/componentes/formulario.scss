@@ -12,7 +12,7 @@ input[type="radio"], input[type="checkbox"] {
 
 label {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFF;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -45,10 +45,10 @@ input[type="text"],
 input[type="email"] {
     display: block;
     width: 100%;
-    border: 2px solid #f37a29;
-    padding: 20px;
+    border: 1px solid #666;
+    padding: 8px 10px;
     font-size: 18px;
-    color: #f37a29;
+    color: #666;
 }
 
 .mc-field-group.input-group {
@@ -68,20 +68,23 @@ input[type="email"] {
 }
 
 #mc-embedded-subscribe {
-	margin-top: 40px;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 13px 20px;
     color: #FFF;
     background-color: #6d5b97;
-    font-size: 30px;
+    font-size: 22px;
+    border: 1px solid #C3B9D5;
     font-weight: 400;
     width: 100%;
-    border: 0;
     text-decoration: none;
     text-align: center;
     display: block;
-    border-radius: 10px;
     cursor: pointer;
     max-width: 100%;
+    transition: 0.4s all;
+	&:hover {
+	    background-color: #4b3d6d;
+	}
 }
 
 .second-step-B2C {

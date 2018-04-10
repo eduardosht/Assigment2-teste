@@ -1668,7 +1668,7 @@ input[type="radio"], input[type="checkbox"] {
 
 label {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   color: #FFF;
   margin-bottom: 10px;
   margin-top: 30px; }
@@ -1697,10 +1697,10 @@ input[type="text"],
 input[type="email"] {
   display: block;
   width: 100%;
-  border: 2px solid #f37a29;
-  padding: 20px;
+  border: 1px solid #666;
+  padding: 8px 10px;
   font-size: 18px;
-  color: #f37a29; }
+  color: #666; }
 
 .mc-field-group.input-group {
   display: block;
@@ -1716,20 +1716,22 @@ input[type="email"] {
     margin: 0 0 5px 6px; }
 
 #mc-embedded-subscribe {
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 30px;
+  padding: 13px 20px;
   color: #FFF;
   background-color: #6d5b97;
-  font-size: 30px;
+  font-size: 22px;
+  border: 1px solid #C3B9D5;
   font-weight: 400;
   width: 100%;
-  border: 0;
   text-decoration: none;
   text-align: center;
   display: block;
-  border-radius: 10px;
   cursor: pointer;
-  max-width: 100%; }
+  max-width: 100%;
+  transition: 0.4s all; }
+  #mc-embedded-subscribe:hover {
+    background-color: #4b3d6d; }
 
 .second-step-B2C {
   display: none; }
@@ -1889,10 +1891,10 @@ body {
 
 .header-home {
   background-color: #303030;
-  height: 135px; }
+  height: 120px; }
   .header-home .img-center {
     max-height: 80px;
-    padding: 25px 0;
+    padding: 20px 0;
     box-sizing: content-box; }
 
 .section-0 {
@@ -1902,8 +1904,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-top: 50px;
-    height: 640px;
+    padding-top: 40px;
+    height: 740px;
     position: absolute;
     top: 0;
     width: 100%; }
@@ -1918,9 +1920,8 @@ body {
       margin-bottom: 50px; }
     .section-0 .section-info h2 {
       font-weight: bold;
-      font-size: 50px;
+      font-size: 45px;
       line-height: 58px;
-      width: 1100px;
       margin: 0 auto 40px auto;
       letter-spacing: 2px;
       color: #FFF; }
@@ -1936,7 +1937,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 720px; }
+    height: 800px; }
+  .section-0 .formulario-box {
+    background-color: #F37A29;
+    padding: 20px 40px;
+    border-radius: 12px; }
+    .section-0 .formulario-box h3 {
+      font-size: 24px;
+      color: #FFF;
+      line-height: 32px; }
 
 .caixa-info {
   position: absolute;
@@ -2042,10 +2051,11 @@ footer {
       right: 0;
       margin: auto; }
   .section-0 .image-background {
-    height: 700px; }
+    height: 100vh; }
   .section-0 .section-info {
     background-image: none;
-    height: 530px;
+    height: auto;
+    padding-bottom: 50px;
     background-color: rgba(84, 62, 119, 0.9); }
     .section-0 .section-info h1 {
       width: 100%;
@@ -2069,7 +2079,12 @@ footer {
     margin: 0 auto 20px auto;
     max-height: 60px; }
   .input-box input[type="text"] {
-    padding: 10px; } }
+    padding: 10px; }
+  .section-0 .section-info {
+    position: relative;
+    height: auto; }
+  .section-0 .image-background {
+    display: none; } }
 
 @media screen and (max-width: 480px) {
   .header-home {
@@ -2087,11 +2102,14 @@ footer {
       left: 0;
       right: 0;
       margin: auto; }
+  .section-0 .formulario-box {
+    padding: 20px; }
   .section-0 .image-background {
-    height: 73vh; }
-  .section-0 .section-info {
     height: auto;
-    padding-bottom: 60px; }
+    background-image: none; }
+  .section-0 .section-info {
+    padding: 30px 20px;
+    position: relative; }
     .section-0 .section-info h2 {
       font-size: 26px;
       line-height: 30px; }

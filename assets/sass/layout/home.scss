@@ -4,11 +4,11 @@ body {
 }
 .header-home {
 	background-color: #303030;
-	height: 135px;
+	height: 120px;
 	
 	.img-center {
 	    max-height: 80px;
-	    padding: 25px 0;
+	    padding: 20px 0;
 	    box-sizing: content-box;
 	}
 }
@@ -16,15 +16,15 @@ body {
 .section-0 {
 	position: relative;
     .section-info {
-    	background-image: url(../assets/images/filtro-roxo.png);
-	    background-size: cover;
-	    background-repeat: no-repeat;
-	    background-position: center bottom;
-	    padding-top: 50px;
-	    height: 640px;
-	    position: absolute;
-	    top: 0;
-	    width: 100%;
+		background-image: url(../assets/images/filtro-roxo.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		padding-top: 40px;
+		height: 740px;
+		position: absolute;
+		top: 0;
+		width: 100%;
 		
 		h1 {
 			font-weight: bold;
@@ -37,13 +37,12 @@ body {
 			margin-bottom: 50px;
 		}
 		h2 {
-			font-weight: bold;
-			font-size: 50px;
-			line-height: 58px;
-			width: 1100px;
-			margin: 0 auto 40px auto;
-			letter-spacing: 2px;
-			color: #FFF;
+		    font-weight: bold;
+		    font-size: 45px;
+		    line-height: 58px;
+		    margin: 0 auto 40px auto;
+		    letter-spacing: 2px;
+		    color: #FFF;
 		}
 		p {
 		    font-size: 28px;
@@ -60,7 +59,18 @@ body {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 720px;
+		height: 800px;
+	}
+
+	.formulario-box {
+	    background-color: #F37A29;
+	    padding: 20px 40px;
+	    border-radius: 12px;
+		h3 {
+		    font-size: 24px;
+		    color: #FFF;
+		    line-height: 32px;
+		}
 	}
 }
 
@@ -203,12 +213,13 @@ footer {
 		}
 
 		.image-background {
-		    height: 700px;
+	        height: 100vh;
 		}
 
 		.section-info {
 		    background-image: none;
-		    height: 530px;
+		    height: auto;
+		    padding-bottom: 50px;
 		    background-color: rgba(84, 62, 119, 0.9);
 			h1 {
 				width: 100%;
@@ -243,6 +254,13 @@ footer {
 	.input-box input[type="text"] {
 		padding: 10px;	
 	}
+	.section-0 .section-info {
+	    position: relative;
+	    height: auto;
+	}
+	.section-0 .image-background {
+		display: none;
+	}
 }
 @media screen and ( max-width: 480px ) {
 
@@ -270,13 +288,18 @@ footer {
 		    }
 		}
 
+		.formulario-box {
+		    padding: 20px;
+		}
+
 		.image-background {
-	        height: 73vh;
+		    height: auto;
+		    background-image: none;
 		}
 
 		.section-info {
-		    height: auto;
-		    padding-bottom: 60px;
+		    padding: 30px 20px;
+		    position: relative;
 			h2 {
 			    font-size: 26px;
 			    line-height: 30px;

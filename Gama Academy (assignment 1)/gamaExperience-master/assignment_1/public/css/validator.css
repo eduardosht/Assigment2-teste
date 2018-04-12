@@ -1,0 +1,16 @@
+
+
+
+/* validator css */
+
+.input-group > input[type="text"]:not(:placeholder-shown):invalid,
+.input-group > input[type="email"]:not(:placeholder-shown):invalid {
+    border-bottom-color: rgb(199, 49, 12);
+   
+}
+
+
+.input-group > input[type="text"]:valid,
+.input-group > input[type="email"]:valid {
+    border-bottom-color: rgb(12, 199, 28);
+}

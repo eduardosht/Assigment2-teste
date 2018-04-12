@@ -1,0 +1,33 @@
+<div class="panel panel-default efeito">
+        <form (submit)="fazerLogin($event)" class="row">
+            <div class="panel-heading">
+                <h1 class="panel-title text-center">Login</h1>
+
+                <span *ngIf="mensagem.length" class="form-control alert-danger">
+                        {{mensagem}}}
+                </span>
+
+                <label for="email">Email:</label>
+                <input id="email" class="form-control" placeholder="seu email"
+                    formControlName="email"
+                    name="email"
+                    [(ngModel)]="email"
+                    autocomplete="off">
+                    <span *ngIf="meuForm.controls.titulo.errors.required" class="form-control alert-danger">
+                        Título obrigatório
+                    </span>
+
+                        <br/>
+                <label for="senha">Senha:</label>
+                <input id="senha" class="form-control" placeholder="sua senha"
+                    formControlName="senha"
+                    name="senha"
+                    [(ngModel)]="senha"
+                    autocomplete="off">
+
+                <button type="submit" class="btn btn-primary">
+                        Fazer Login
+                </button>
+            </div>
+        </form>
+</div>

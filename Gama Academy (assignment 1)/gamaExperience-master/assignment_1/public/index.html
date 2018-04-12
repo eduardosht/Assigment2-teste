@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gama Experience - Assignment 1</title>
+</head>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/validator.css">
+
+<body>
+
+  <header class="cabecalho">
+
+    <div class="container">
+
+
+      <a class="logo">
+        <img src="data:image/png;base64,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" alt="Logo nav">
+      </a>
+
+      <nav id="nav" class="cabecalho-nav">
+        <a class="nav-link active" href="#sobremim">Sobre mim</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#experiencia">Experiências</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="sobremim">
+
+      <figure>
+        <h2>Sobre Mim</h2>
+        <fieldset>
+          <div class="box">
+            <img class="box-img-1" src="https://ca.slack-edge.com/T9R0CF1HB-U9TJS98R5-f4f54c8f204f-1024" alt="foto" />
+            <figcaption class="box-text">
+              <p> Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Diuretics
+                paradis num copo é motivis de denguis. A ordem dos tratores não altera o pão duris. Cevadis im ampola pa
+                arma uma pindureta.</p>
+
+            </figcaption>
+          </div>
+        </fieldset>
+
+      </figure>
+    </section>
+
+
+    <section id="skills">
+
+      <figure>
+        <h2>Skills</h2>
+        <fieldset>
+          <div class="box">
+            <img class="box-img-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzSCWHYgg4Tud7bEROcj3nMB4UgZAIDBtjwbO_1bbGU3oD292rQ"
+              alt="skills" />
+            <figcaption class="box-text">
+
+              <div id="progressbar">
+                <div>HTML</div>
+              </div>
+              <div id="progressbar">
+                <div>CSS</div>
+              </div>
+              <div id="progressbar">
+                <div>JS</div>
+              </div>
+
+            </figcaption>
+          </div>
+        </fieldset>
+
+      </figure>
+    </section>
+
+
+
+    <section id="experiencia">
+
+      <div class="container">
+        <h2>Experiências Profissionais</h2>
+        <fieldset>
+          <p> Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Diuretics
+            paradis num copo é motivis de denguis. A ordem dos tratores não altera o pão duris. Cevadis im ampola pa arma
+            uma pindureta.</p>
+      
+        </fieldset>
+      </div>
+
+
+    </section>
+
+
+    <section id="contato">
+
+      <div class="container">
+
+        <div id="alert"></div>
+        <h2>Contato</h2>
+        <fieldset>
+
+          <p>Entre em contato</p>
+          <form id="myFrom" name="myForm" method="POST" onsubmit="contatoController.adicionarContato()">
+            <div class="input-group">
+              
+              <input required type="text" 
+                  id="empresa" 
+                  name="nomeDaEmpresa"
+                  minlength="3" 
+                  placeholder=" "
+                  require>
+              </input>
+              <label for="empresa">Empresa</label>
+            </div>
+
+            <div class="input-group">
+              
+              <input type="text" 
+                  id="nome" 
+                  name="nomeCompleto"
+                  minlength="7"
+                  placeholder=" " 
+                  required>
+              </input>
+              <label  for="nome">Nome Completo</label>
+            </div>
+
+            <div class="input-group">
+
+              <input type="email"
+                  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  id="email"
+                  name="email" 
+                  placeholder=" " 
+                  required>
+              </input>
+              <label for="email">E-mail</label>
+            </div>
+
+            <input type="submit" value="Enviar"></input>
+          </form>
+          
+        </fieldset>
+
+      </div>
+    </section>
+
+  </main>
+
+    <!-- firebase config -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+  <script src="./js/firebase/init.js"></script>
+
+
+  
+  <script type= text/javascript src="./js/models/contato.model.js"></script>
+  <script type= text/javascript src="./js/services/contato.service.js"></script>
+  <script type= text/javascript src="./js/controllers/contato.controller.js"></script>
+
+  <script type= text/javascript src="./js/main.js"></script>
+
+
+
+  <script>
+
+
+    document.querySelector("#myFrom").addEventListener("submit", function(event){
+      event.preventDefault()
+    });
+
+    contatoController = new ContatoController();
+    contatoController.obterContato().then(snap => {
+      console.log(snap);
+    }).catch(console.log);
+
+  </script>
+</body>
+
+</html>

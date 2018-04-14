@@ -38,19 +38,19 @@ body {
 		}
 		h2 {
 		    font-weight: bold;
-		    font-size: 45px;
-		    line-height: 58px;
+		    font-size: 36px;
+		    line-height: 38px;
 		    margin: 0 auto 40px auto;
 		    letter-spacing: 2px;
 		    color: #FFF;
 		}
 		p {
-		    font-size: 28px;
-		    line-height: 36px;
+		    font-size: 20px;
+		    line-height: 30px;
 		    letter-spacing: 1px;
 		    font-weight: 300;
 		    color: #FFF;
-		    margin-bottom: 50px;
+		    margin-bottom: 20px;
 		}
 	}
 
@@ -263,6 +263,13 @@ footer {
 	}
 	.section-0 .image-background {
 		display: none;
+	}
+	.section-0 .section-info h2 {
+	    font-size: 34px;
+	    line-height: 38px;
+	}
+	.section-0 .section-info p {
+		font-size: 20px;
 	}
 }
 @media screen and ( max-width: 480px ) {
